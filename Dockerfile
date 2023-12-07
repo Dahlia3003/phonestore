@@ -1,7 +1,7 @@
 FROM tomcat:10.1.13-jdk11
 RUN rm -rf /usr/local/tomcat/webapps/ROOT
 RUN rm -rf /usr/local/tomcat/webapps/examples
-ADD WebAppProject-1.0-SNAPSHOT.war.war /usr/local/tomcat/webapps/
+ADD WebAppProject-1.0-SNAPSHOT.war /usr/local/tomcat/webapps/
 
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
